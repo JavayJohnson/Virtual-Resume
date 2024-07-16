@@ -1,0 +1,77 @@
+.nav1{
+    border: solid Purple;
+    margin: 1em;
+    /* height: 50px; */
+    display: flex;
+    
+}
+.nav1-1{
+    border: solid blue; 
+    margin: 1em;
+    width:100px;
+    height:100px;
+    flex-wrap:wrap;
+
+}
+.SocMedBox2{
+    /* height:10px; */
+}
+
+#sp1-1{
+ margin-right:auto;
+ height:auto;
+ width: auto;
+ 
+}
+
+.SocMedBox3{
+    height:auto;
+}
+#sp1-1{
+ margin-right:auto;
+ height:auto;
+ width: auto;
+ 
+}
+
+.SocMedBox4{
+    height:auto;
+}
+#sp1-1{
+ margin-right:auto;
+ height:auto;
+ width: auto;
+ 
+}
+
+
+.nav2{
+    border: solid green;
+    margin: 1em;
+    /* height: 50px; */
+    flex-wrap: wrap;
+}
+.nav2-1{
+    border: solid;
+    margin: 1em;
+    width:  %;
+}
+#sp2-5{
+    margin-left: auto;
+}
+.nav3{
+    border: solid;
+    margin: 1em;
+    /* height: 50px; */
+    display: flex;
+    justify-content: end;
+}
+.nav3-1{
+    border: solid;
+    margin: 1em;
+    width:  10%;
+
+
+}
+
+} */ */
