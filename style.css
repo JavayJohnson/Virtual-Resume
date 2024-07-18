@@ -1,77 +1,94 @@
-.nav1{
-    border: solid Purple;
-    margin: 1em;
-    /* height: 50px; */
+/* Parent container with hot pink border */
+.socialcontainer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
 }
-.nav1-1{
-    border: solid blue; 
+
+/* Individual social media boxes with adjusted border and dimensions */
+#SocMedBox1, #SocMedBox1, #SocMedBox3 {
+    border: solid blue;
+    width:150; /* Adjusted width to fit within the sheet */
+    height:;
     margin: 1em;
-    width:100px;
-    height:100px;
-    flex-wrap:wrap;
-
-}
-.SocMedBox2{
-    /* height:10px; */
+    padding: 3em;
+  
 }
 
-#sp1-1{
- margin-right:auto;
- height:auto;
- width: auto;
- 
+/* Adjust the width and height of the logos */
+#LinkedIn, #TheEmpowermentCodes, #GitHub {
+    width:80%; /* Fixed width for logo */
+    height: 80%; 
+    /* Fixed height for logo */
+     /* Ensure the images are cropped to fit the dimensions */
+    
 }
 
-.SocMedBox3{
-    height:auto;
-}
-#sp1-1{
- margin-right:auto;
- height:auto;
- width: auto;
- 
+/* Additional styling for overall layout */
+.infoContainer {
+    border: solid;
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
 }
 
-.SocMedBox4{
-    height:auto;
-}
-#sp1-1{
- margin-right:auto;
- height:auto;
- width: auto;
- 
+.nav1 {
+    border: solid blue;
+    margin: auto;
+    justify-content: space-between;
+    width: 70%;
+    display: block;
 }
 
+.nav1-1 {
+    border-top-left-radius: nav1-1;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
 
-.nav2{
-    border: solid green;
+.sectionContainer {
+    border: solid black;
     margin: 1em;
-    /* height: 50px; */
+
+}
+
+.nav2 {
+    border: solid blue;
+    margin: 1em;
     flex-wrap: wrap;
 }
-.nav2-1{
-    border: solid;
+
+.nav2-1 {
+    border: solid hotpink;
     margin: 1em;
-    width:  %;
+   
 }
-#sp2-5{
+
+#sp2-5 {
     margin-left: auto;
 }
-.nav3{
+
+.nav3 {
     border: solid;
     margin: 1em;
-    /* height: 50px; */
     display: flex;
     justify-content: end;
 }
-.nav3-1{
+
+.nav3-1 {
     border: solid;
     margin: 1em;
-    width:  10%;
-
-
+    width: 10%;
 }
 
-} */ */
+#ProfilePic {
+    height: 500px;
+}
+
+.box {
+    width: 100px;
+    height: auto;
+}
