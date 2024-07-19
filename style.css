@@ -1,4 +1,4 @@
-/* Parent container with hot pink border */
+
 .socialcontainer {
     border:5px solid hotpink;
     margin:1em;
@@ -8,26 +8,11 @@
     
 }
 
-/* Individual social media boxes with adjusted border and dimensions */
-/* #SocMedBox1, #SocMedBox1, #SocMedBox3 { */
-    /* border: solid blue;
-    width:150; /* Adjusted width to fit within the sheet */
-    /* height:;
-    margin: 1em;
-    padding: 3em;
-  
-} */ */
-
-/* Adjust the width and height of the logos */
 #LinkedIn, #TheEmpowermentCodes, #GitHub {
-    width:80%; /* Fixed width for logo */
-    height: 80%; 
-    /* Fixed height for logo */
-     /* Ensure the images are cropped to fit the dimensions */
-    
+    width:80%; 
+    height: 80%;    
 }
 
-/* Additional styling for overall layout */
 .infoContainer {
     border: solid;
     display: flex;
@@ -36,24 +21,19 @@
 }
 
 .nav1 {
-    border: solid blue;
-    /* margin: auto; */
+    border: solid hotpink;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    /* width: 70%; */
-    /* display: block; */
 
 }
 
 .Social{
 Height: 80px;
+border: solid blue;
+    margin: 1em;
 }
-
-
-
-
 
 .nav1-1 {
     border-top-left-radius: nav1-1;
@@ -64,13 +44,19 @@ Height: 80px;
 }
 
 .sectionContainer {
-    border: solid black;
+    border: solid blue;
     margin: 1em;
-
 }
 
+.sectionContainer1 {
+    border: solid hotpink;
+    margin: 1em;
+    flex-wrap: wrap;
+}
+
+
 .nav2 {
-    border: solid blue;
+    border: solid hotpink;
     margin: 1em;
     flex-wrap: wrap;
 }
