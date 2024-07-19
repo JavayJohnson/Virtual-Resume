@@ -36,10 +36,12 @@ border: solid blue;
 }
 
 .nav1-1 {
+    /* border: 5px solid blue; */
     border-top-left-radius: nav1-1;
-    margin-right: auto;
+    /* margin-right: auto; */
+    margin: 0 auto;
     height: auto;
-    width: auto;
+    width: 300px;
     display: inline-block;
 }
 
@@ -56,7 +58,7 @@ border: solid blue;
 
 
 .nav2 {
-    border: solid hotpink;
+    border: solid blue;
     margin: 1em;
     flex-wrap: wrap;
 }
@@ -92,3 +94,4 @@ border: solid blue;
     width: 100px;
     height: auto;
 }
+
