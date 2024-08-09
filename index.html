@@ -1,87 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Virtual Resume</title>
-    <meta name="description" content="Javay Johnson's Virtual Resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javay Johnson - Interactive Virtual Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .profile-photo {
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .accordion {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .accordion:hover {
+            background-color: hotpink;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .accordion.active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 15px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+        }
+
+        .panel p {
+            padding: 10px 0;
+        }
+
+        .contact-info, .social-links {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: hotpink;
+        }
+    </style>
 </head>
 <body>
-    <div class="parentcontainer"></div>
 
+<div class="resume-container">
+   
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHUIyOXxna7-w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721923526632?e=1728518400&v=beta&t=KqSgiNoY1n6hs499iOVSorWYCJgmoxDUMCWlXvw3QVg" alt="Javay Johnson" class="profile-photo" height="150">
 
-    <div class="nav1-1" id="sp1-1">
-        <div class="child1">
-            <h1 style="text-align:center;"><strong>Javay Johnson, SMP, GCPM, BGS</strong></h1> 
-            <h2 style="text-align:center;"><strong>Southfield, MI</strong></h2>
-            <h2 style="text-align:center;"><strong>Someone@gmail.com</strong></h2>
-            <h3 style="text-align:center;">Fullstack Developer</h3> 
-            <h3 style="text-align:center;">Senior Project Manager</h3> 
-            <h3 style="text-align:center;">Scrum Master Professional</h3> 
-            <h3 style="text-align:center;">Business Analyst</h3>
-        </div>
-        <div class="child2">
-            <h3 style="text-align:center;">
-                <img id="ProfilePic" src="https://images.clickfunnels.com/cdn-cgi/image/width=2600,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/workspace/jkGYBd/image/2378848/file/568d474e8b454459199ddaee26aafca3.jpg" alt="Javay Johnson"/>
-            </h3>
-        </div>
-    </div>
     
-
-
-
-    <div class="nav2">
-        <div class="nav2"><h2>Projects:</h2>  
-        <div class="nav2-1"><h3>Project 1: Domino's- UKG (Kronos) Timekeeping Module Net New Implementation and Enhancement Deployment</h3></div>
-        <div class="nav2-1"><h3>Project 2: Ford Motor Company- SAP Ariba / S/4 Hana Global I-ERP Deployment</h3></div>
-        <div class="nav2-1"><h3>Project 3: Ford Motor Company- Legacy Application Decommission</h3></div>
-        <div class="nav2-1"><h3>Project 4: Ford Motor Company- Microsoft Azure Cloud Data Center Migration</h3></div>
-        <div class="nav2-1"><h3>Project 5: Daimler Mercedes-Benz Group- CIO Department Deployment and Contract Renewal Audit</h3></div>
-    </div>
+    <h1>Javay Johnson</h1>
+    <p>Full-Stack Software Engineer Student</p>
+    <p>Scrum Master Professional - Senior Project Manager - Business Analyst</p>
+    <p>Southfield, MI | 248-910-4295 | <a href="mailto:JavayJohnson@gmail.com">JavayJohnson@gmail.com</a></p>
     
-    <div class="displayContainer">
-        <div class="sectionContainer">
-            <h2>100% Skill Proficiencies: Project Management, Scrum, Waterfall, Agile, HTML, CSS, Javascript</h2>
-        </div>
-        <div class="sectionContainer">
-            <div class="sectionContainer1"></div>
-            <h2>Education:</h2> 
-            <div class="sectionContainer1"><h3>Per Scholas - Software Engineering</h3></div>
-            <div class="sectionContainer1"><h3>Scrumversity - Scrum Master Professional</h3></div>
-            <div class="sectionContainer1"><h3>Walsh College - Project Management Graduate Certificate</h3></div>
-            <div class="sectionContainer1"><h3>Indiana University - Bachelor's Degree: General Studies w/ Concentration in Mathematics & Science</h3></div>
-            <div class="sectionContainer1"><h3>Indiana University - Associate's of Arts Degree</h3></div> 
-        </div>
-        <div class="sectionContainer">
-            <h2>References: Jordan Wofford- Per Scholas Instructor</h2>
-        </div>
+    <div class="social-links">
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/javay-johnson-full-stack-software-engineer/" target="_blank">https://www.linkedin.com/in/javay-johnson-full-stack-software-engineer/</a></p>
+        <p>GitHub: <a href="https://github.com/JavayJohnson" target="_blank">https://github.com/JavayJohnson</a></p>
     </div>
-    
-    <!-- <div class="box"></div> -->
-    
-    <div class="socialcontainer">
-        <div class="nav1">
-            <!-- <h3>LinkedIn</h3> -->
-            
-            <a href="https://www.linkedin.com/in/javay-johnson-csmp-gcpm-bgs-5467003/">
-                <img class="Social" src="https://pngimg.com/d/linkedIn_PNG29.png" alt="LinkedIn"/></a>
-        </div>
-        
-        <div class="nav1">
-            <!-- <h3>Empowerment</h3> -->
 
-            <a href="https://www.theempowermentcodes.com/">
-            <img class="Social" src="https://images.clickfunnels.com/cdn-cgi/image/width=500,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/workspace/jkGYBd/image/2862798/file/98fecacbd873d8b65d601c81b9a050fc.jpg" alt="TheEmpowermentCodes"/></a>
-        </div> 
-        
-        <div class="nav1">
-            <!-- <h3>GitHub</h3> -->
-
-            <a href="https://github.com/JavayJohnson/">
-            <img class="Social" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtQrRo2uEWrIXpANdFl7PP4mq-0QM4cZknA&s" alt="GitHub"/></a>
-        </div>
+    <button class="accordion">About Me</button>
+    <div class="panel">
+        <p>I'm Javay Johnson, a dynamic software engineer with 10 years of IT experience and a Full-Stack Software Engineering student at Per Scholas. I've mastered JavaScript, HTML, CSS, React, Node.js, Express, and PostgreSQL, and I'm passionate about developing robust, user-centric applications. With a background as a Scrum Master Professional and a graduate-level certificate in Project Management, I've navigated diverse roles at Fortune 100 companies like Ford, Detroit Diesel, Zoom Info, Conga, and Domino’s Pizza. I've led major projects, including two Cloud Data Center Migrations, an I-ERP Global initiative with S/4 Hana and SAP Ariba integration, and an $8M application migration project. My experience spans Full-Stack Engineering, Scrum Master, Business Analysis, and Project Management, ensuring seamless transitions and stellar outcomes.</p>
     </div>
+
+    <button class="accordion">Technical Skills</button>
+    <div class="panel">
+        <p><strong>Coding Languages:</strong> HTML, CSS, JavaScript, Node.js, Express.js, React, TypeScript</p>
+        <p><strong>Software Engineering Management:</strong> DOM manipulation, Asynchronous programming, State management with Redux</p>
+        <p><strong>Database Management:</strong> MongoDB</p>
+        <p><strong>DevOps:</strong> CI/CD processes</p>
+        <p><strong>Cloud:</strong> MS Azure Cloud Technology, Pivotal Cloud Foundry, SiteScope, Dynatrace</p>
+        <p><strong>Creative:</strong> Camtasia, WordPress, Canva</p>
+        <p><strong>Administrative:</strong> MS Office 365 Suite, MS Outlook, MS Project, MS Visio, MS SharePoint, EPM, PeopleSoft, Evernote, Chorus, Okta, Duo</p>
+        <p><strong>Project Management Tools:</strong> Smartsheet, Clarity, Rally, DORF, ALM, Slack</p>
+        <p><strong>Communications:</strong> Zoom, WebEx, Skype, GoTo Meeting, Google Workspace</p>
+        <p><strong>E-commerce:</strong> Shopify, ClickFunnels</p>
+        <p><strong>Machine Learning/AI:</strong> OpenAI ChatGPT, DALL-E, Codex, GPT-4, Whisper, CLIP, Embeddings</p>
+        <p><strong>Learning Management Systems:</strong> Canvas</p>
+    </div>
+
+    <button class="accordion">Experience</button>
+    <div class="panel">
+        <h3>Domino’s Pizza LLC (World Resource Center) – Ann Arbor, MI</h3>
+        <p><strong>Lead Project Manager - Human Resources Department (01/2023-11/2023)</strong></p>
+        <ul>
+            <li>Managed UKG (Kronos) Dimensions Timekeeping Module migration Data Governance Project</li>
+            <li>Created and presented weekly Project Status dashboards</li>
+            <li>Developed Project Charters</li>
+            <li>Created and delivered Steering Committee meetings</li>
+            <li>Coordinated Onsite UKG/Domino’s Pizza Solution Design Workshops</li>
+            <li>Gathered initial business requirements from multiple departments</li>
+        </ul>
+
+
+        <button class="accordion">Conga - Broomfield, CO - Senior Project Manager (Remote Consultant - Contract) - Project Management Office (06/2022-08/2022)</button>
+        <div class="panel">
+            <ul>
+                <li>Created processes, templates, and established best practices within a newly formed PMO</li>
+                <li>Set milestones and schedules to drive projects forward</li>
+                <li>Managed projects with Smartsheet</li>
+            </ul>
+        </div>
+
+        <button class="accordion">ZoomInfo - Vancouver, WA - Senior Project Manager - (Remote Consultant) (03/2022-06/2022)</button>
+        <div class="panel">
+            <ul>
+                <li>Managed SAP ERP Implementation, Salesforce DC and SOX Readiness, and Everstring Migration Communication Projects</li>
+                <li>Prepared Steering Committee presentations and dashboards for Executives</li>
+                <li>Created project charters, communication plans, and executive presentation decks</li>
+                <li>Collaborated with Deloitte resources</li>
+                <li>Updated project schedules, resources, tasks, and dashboards in Smartsheet</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Ford Motor Company - Dearborn, MI - SAP Ariba Integration/S4 Hana Senior Project Manager (Remote Consultant) (05/2017-03/2022)</button>
+        <div class="panel">
+            <ul>
+                <li>Managed SAP Ariba Integration with S/4 Hana Project under Supplier Relationship Management: Ford’s largest global I-ERP expansion program</li>
+                <li>Focused on SAP Modules: Source to Contract, Procure to Pay, Invoice to Pay, Ok to Pay, Req to Receipt, etc.</li>
+                <li>Liaised between multiple business unit stakeholders, SAP Ariba, and Deloitte teams</li>
+                <li>Prepared and presented Program Increment planning presentations for Senior Leadership</li>
+                <li>Led daily Scrum of Scrum meetings to resolve issues/defects</li>
+                <li>Maintained artifact systems and updated/reported CRAID’s (Change Requests, Risks, Actions, Issues, and Decisions)</li>
+                <li>Used Agile methodology tools: Rally Kanban board, user stories, backlog, blockers, defects, admin support</li>
+                <li>Oversaw and managed multiple SIT and UAT cycles</li>
+            </ul>
+        </div>
+
+
+        <button class="accordion">Detroit Diesel (Daimler, AG Mercedes Benz) - Redford, MI - Business Analyst (Consultant) (08/2016–05/2017)</button>
+        <div class="panel">
+            <ul>
+                <li>Conducted onsite manufacturing plant audit interviews</li>
+                <li>Developed Business Process Management</li>
+                <li>Created executive PowerPoint presentations for CIO to deliver to leadership teams</li>
+                <li>Prepared statistical reports conveying KPIs and other metrics</li>
+                <li>Gathered and documented “as-is” business requirements with Visio and Signavio</li>
+                <li>Assisted with the development of a localized Operating Model leveraging ITIL and CMMI</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <button class="accordion">Education</button>
+    <div class="panel">
+        <ul>
+            <li><strong>PER SCHOLAS:</strong> Full-Stack Software Engineer Certificate (10/2024)</li>
+            <li><strong>SCRUMVERSITY:</strong> Scrum Master Professional Certificate (02/2020)</li>
+            <li><strong>WALSH COLLEGE:</strong> Graduate School Project Management Certificate (06/2014)</li>
+            <li><strong>INDIANA UNIVERSITY:</strong> General Studies - concentration: Math and Science Bachelor’s Degree (05/2004)</li>
+            <li>Associate’s of Arts Degree</li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
